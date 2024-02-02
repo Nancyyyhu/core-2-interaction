@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+<h1>
+  The Tragedy of Hamlet, Prince of Denmark
+</h1>
+
+<h2>
+  ACT I
+</h2>
+<h3>
+  SCENE I. Elsinore. A platform before the castle.
+</h3>
+</head>
+
+<label id="showButtonLabel" for="showButtonCheckbox">Click Me To See Act 1</label>
+<input type="checkbox" id="showButtonCheckbox">
+
+<body>
+<p1 id="hiddenText">
+FRANCISCO at his post. Enter to him BERNARDO
+<br>
+<b>BERNARDO</b>
+Who's there?
+<br>
+<b>FRANCISCO</b>
+Nay, answer me: stand, and unfold yourself.
+<br>
+<b>BERNARDO</b>
+Long live the king!
+<br>
+<b>FRANCISCO</b>
+Bernardo?
+<br>
+<b>BERNARDO</b>
+He.
+<br>
+<b>FRANCISCO</b>
+You come most carefully upon your hour.
+<br>
+<b>BERNARDO</b>
+'Tis now struck twelve; get thee to bed, Francisco.
+<br>
+<b>FRANCISCO</b>
+For this relief much thanks: 'tis bitter cold,
+And I am sick at heart.
+<br>
+<b>BERNARDO</b>
+Have you had quiet guard?
+<br>
+<b>FRANCISCO</b>
+Not a mouse stirring.
+<br>
+<b>BERNARDO</b>
+Well, good night.
+If you do meet Horatio and Marcellus,
+The rivals of my watch, bid them make haste.
+<br>
+<b>FRANCISCO</b>
+I think I hear them. Stand, ho! Who's there?
+<br>
+Enter HORATIO and MARCELLUS
+<br>
+<b>HORATIO</b>
+Friends to this ground.
+<br>
+<b>MARCELLUS</b>
+And liegemen to the Dane.
+<br>
+<b>FRANCISCO</b>
+Give you good night.
+<br>
+<b>MARCELLUS</b>
+O, farewell, honest soldier:
+Who hath relieved you?
+<br>
+<b>FRANCISCO</b>
+Bernardo has my place.
+Give you good night.
+<br>
+Exit
+<br>
+<b>MARCELLUS</b>
+Holla! Bernardo!
+<br>
+<b>BERNARDO</b>
+Say,
+What, is Horatio there?
+<br>
+<b>HORATIO</b>
+A piece of him.
+<br>
+<b>BERNARDO</b>
+Welcome, Horatio: welcome, good Marcellus.
+<br>
+<b>MARCELLUS</b>
+What, has this thing appear'd again to-night?
+<br>
+<B>BERNARDO</B>
+I have seen nothing.
+<br>
+<b>MARCELLUS</b>
+Horatio says 'tis but our fantasy,
+And will not let belief take hold of him
+Touching this dreaded sight, twice seen of us:
+Therefore I have entreated him along
+With us to watch the minutes of this night;
+That if again this apparition come,
+He may approve our eyes and speak to it.
+<br>
+<b>HORATIO</b>
+Tush, tush, 'twill not appear.
+<br>
+<b>BERNARDO</b>
+Sit down awhile;
+And let us once again assail your ears,
+That are so fortified against our story
+What we have two nights seen.
+<br>
+<b>HORATIO</b>
+Well, sit we down,
+And let us hear Bernardo speak of this.
+<br>
+<b>BERNARDO</b>
+Last night of all,
+When yond same star that's westward from the pole
+Had made his course to illume that part of heaven
+Where now it burns, Marcellus and myself,
+The bell then beating one,--
+
+</p1>
+</body>
+
+<style>
+  @font-face {
+    font-family: 'HomeChristmas-Regular';
+    src: url('fonts/HomeChristmas-Regular.woff') format('woff'),
+}
+@font-face {
+    font-family: 'FLOWRISE';
+    src: url('fonts/FLOWRISE.woff') format('woff');
+}
+@font-face {
+    font-family: 'BROGETTA-Regular';
+    src: url('fonts/BROGETTA-Regular.woff') format('woff');
+}
+
+
+body {
+  background-color: #e1d6bb;
+  color: #1f4129;
+}
+
+h1,h2,h3 {
+   font-family: 'HomeChristmas-Regular';
+   text-align: center;
+   justify-content: center;
+   color: #761918;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p1 {
+   font-family: 'HomeChristmas-Regular';
+}
+
+ #hiddenText {
+      display: none;
+    }
+
+  #showButtonLabel {
+      cursor: pointer;
+      color: blue;
+      text-decoration: overline;
+      font-family: 'FLOWRISE';
+      font-size: 20px;
+      color: #1f4129;
+    }
+    
+  #showButtonCheckbox {
+      display: none;
+    }
+
+    
+  #showButtonCheckbox:checked + #hiddenText {
+      display: block;
+    }
