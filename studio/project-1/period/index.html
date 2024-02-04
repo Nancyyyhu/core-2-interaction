@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+<body>
+<h1>SELECT A PUNCTUATION</h1>
+<h2>PERIOD</h2>
+
+<div class="hollow-rectangle"></div>
+
+<button class="navButton" id="prevButton">&lt</button>
+<button class="navButton" id="nextButton">&gt</button></h1>
+
+<h3>.</h3>
+
+<a href="destination-page.html" class="navigation-button">Choose Me!</a>
+</body>
+
+<style>
+@font-face{
+     font-family: 'Heyhoo';
+     src:url('fonts/Heyhoo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+     font-family: 'aAttackGraffiti';
+     src:url('fonts/aAttackGraffiti.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+     font-family: 'adrippingmarker';
+     src:url('fonts/adrippingmarker.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+     font-family: 'Arista20Alternate-Regular';
+     src:url('fonts/Arista20Alternate-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+     font-family: 'Bubbleboddy-ExtraLight';
+     src:url('fonts/Bubbleboddy-ExtraLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+     font-family: 'Candylove';
+     src:url('fonts/Candylove.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+     font-family: 'love-story-ttf';
+     src:url('fonts/love-story-ttf.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+     font-family: 'StretchProRegular';
+     src:url('fonts/StretchProRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	background-color: #F6F3E9;
+}
+
+h1,h2 {
+	text-align: center;
+	justify-content: center;
+	font-family: 'Heyhoo';
+	color: #fea485;
+	line-height: 1.5;
+	margin: 0;
+}
+
+h1 {
+	font-size: 27px;
+}
+
+h2 {
+	font-size: 55px;
+}
+
+.hollow-rectangle {
+ 	        display: flex;
+ 	        position: absolute;
+            left: 5%;
+            top: 20%;
+            width: 1300px; 
+            height: 580px; 
+            border: 10px solid #232F61;
+            border-radius: 8px 50px 10px 50px;
+}
+
+.navButton {
+    width: 80px;
+    height: 80px;
+    font-family: 'Heyhoo';
+    color: #232F61;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 5px solid #232F61;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    position: fixed;
+    top: 50%;
+}
+
+#prevButton {
+    left: 10%;
+}
+
+#nextButton {
+    right: 10%;
+}
+
+h3 {
+   font-size: 160px;
+   text-align: center;
+   justify-content: center;
+   font-family: 'Arista20Alternate-Regular';
+}
+
+.navigation-button {
+            width: 450px;
+            height: 35px;
+            display: flex;
+            position: absolute;
+            left: 35%;
+            top: 80%;
+            text-decoration: none;
+            border-radius: 30px 30px 30px 30px;
+            color: #232F61;
+            background-color: transparent;
+            border: 5px solid #232F61;
+            padding: 10px 10px;
+            text-align: center;
+            justify-content: center;
+            letter-spacing: 2px;
+            font-size: 30px;
+            font-family: 'Heyhoo';
+            cursor: pointer;
+        }
+
+.navigation-button:hover {
+            color: #F6F3E9;
+            background-color: #232F61;
+            border: 2px solid #232F61;
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+document.getElementById('prevButton').addEventListener('click', function() {
+    window.location.href = 'https://nancyyyhu.github.io/core-2-interaction/studio/project-1/comma/index';
+});
+
+document.getElementById('nextButton').addEventListener('click', function() {
+    window.location.href = 'https://nancyyyhu.github.io/core-2-interaction/studio/project-1/question/index';
+});
+
+document.querySelector('.navigation-button').addEventListener('click', function() {
+            window.location.href = 'https://nancyyyhu.github.io/core-2-interaction/studio/project-1/poetry/index';
+        });
+</script>
