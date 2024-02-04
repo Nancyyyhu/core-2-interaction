@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+<body>
+<h1>SELECT A PUNCTUATION</h1>
+<h2>QUESTION MARK</h2>
+
+<div class="hollow-rectangle"></div>
+
+<button class="navButton" id="prevButton">&lt</button>
+<button class="navButton" id="nextButton">&gt</button></h1>
+
+</body>
+
+<style>
+@font-face{
+     font-family: 'Heyhoo';
+     src:url('fonts/Heyhoo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	background-color: #F6F3E9;
+}
+
+h1,h2 {
+	text-align: center;
+	justify-content: center;
+	font-family: 'Heyhoo';
+	color: #fea485;
+	line-height: 1.5;
+	margin: 0;
+}
+
+h1 {
+	font-size: 27px;
+}
+
+h2 {
+	font-size: 55px;
+}
+
+.hollow-rectangle {
+ 	        display: flex;
+ 	        position: absolute;
+            left: 5%;
+            top: 20%;
+            width: 1300px; 
+            height: 580px; 
+            border: 10px solid #232F61;
+            border-radius: 8px 50px 10px 50px;
+}
+
+.navButton {
+    width: 80px;
+    height: 80px;
+    font-family: 'Heyhoo';
+    color: #232F61;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 5px solid #232F61;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    position: fixed;
+    top: 50%;
+}
+
+#prevButton {
+    left: 10%;
+}
+
+#nextButton {
+    right: 10%;
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+document.getElementById('prevButton').addEventListener('click', function() {
+    window.location.href = 'https://core-2-interaction/';
+});
+
+document.getElementById('nextButton').addEventListener('click', function() {
+    window.location.href = 'https://core-2-interaction/studio/project-1/exclamation/index';
+});
+</script>
