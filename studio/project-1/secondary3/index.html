@@ -5,21 +5,23 @@
 
 <body>
 
+<div class="title">
 <h1>
   Slavish Existence, The Fopling
 </h1>
-
-<div class="hollow-rectangle">
 
 <h2>
   : ; 
 </h2>
 
-<a href="https://en.wikipedia.org/wiki/Apostrophe">
 <h3>
+  <a href="https://en.wikipedia.org/wiki/Apostrophe">
   colon & semicolon
+  </a>
 </h3>
-</a>
+</div>
+
+<div class="hollow-rectangle">
 
   <div class="container">
   <img src="images/1.jpg" width="350" height="250">
@@ -250,43 +252,43 @@ When it gets really difficult you want to disentangle rather than to cut the kno
 
 body {
   background-color: #232F61;
-  margin: 0px 0px 200px 200px;
+  margin: 100px 100px 200px 200px;
 
 }
 
-h1 {
+.title {
       font-family: 'Heyhoo';
+      position :absolute;
       text-align: center;
       justify-content: center;
-      margin: 50px;
       color: #761918;
+      z-index: 1;
+    }
+
+
+h1 {
       z-index: 1;
       font-size: 90px;
 }
 
 h2 {
-  text-align: center;
-      justify-content: center;
-  font-family: 'Heyhoo';
+  top: ;
   font-size: 280px;
   letter-spacing: 30px;
-  color: #761918;
 }
 
 h3 {
-  text-align: center;
-      justify-content: center;
-  font-family: 'Heyhoo';
   font-size: 18px;
-  color: #761918;
   text-decoration: underline;
 }
 
+
 .hollow-rectangle {
-            align-items: center;
-            justify-content: center;
-            width: 70vw; 
-            height: 200vh; 
+            position: absolute;
+            left: 20%;
+            top: 6%;
+            width: 900px; 
+            height: 1680px; 
             border: 10px solid #3e528b;
             background-color: #eee1c7;
             z-index: -1;
@@ -296,19 +298,15 @@ h3 {
 .container {
       display: flex;
       position: absolute;
-      top: 30%;
-      left: 50%;
-    }
-
-.image {
-      position: absolute;
+      top: 18%;
+      left: 35%;
     }
 
 .text {
       position: absolute;
-      top: 100%; 
+      top: 30%; 
       left: 0; 
-      padding: 150px;
+      padding: 100px;
       text-align: center;
       justify-content: center;
       font-family: 'Heyhoo';
@@ -321,7 +319,7 @@ h3 {
             display: flex;
             position: absolute;
             left: 32%;
-            top: 200%;
+            top: 95%;
             width: 300px;
             height: 55px;
             text-decoration: none;
