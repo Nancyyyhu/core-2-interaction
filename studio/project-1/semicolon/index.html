@@ -8,7 +8,8 @@
 <h1>SELECT A PUNCTUATION</h1>
 <h2>SEMICOLON</h2>
 
-<div class="hollow-rectangle"></div>
+<div class="hollow-rectangle">
+</div>
 
 <button class="navButton" id="prevButton">&lt</button>
 <button class="navButton" id="nextButton">&gt</button></h1>
@@ -77,6 +78,8 @@
 
 body {
     background-color: #eee1c7;
+    height: 100vh;
+    margin: 30px;
 }
 
 h1,h2 {
@@ -97,15 +100,14 @@ h2 {
 }
 
 .hollow-rectangle {
-            display: flex;
-            position: absolute;
-            left: 5%;
-            top: 20%;
+            align-items: center;
+            justify-content: center;
             width: 1300px; 
-            height: 580px; 
+            height: 600px; 
             border: 10px solid #232F61;
             border-radius: 8px 50px 10px 50px;
 }
+
 
 .navButton {
     width: 80px;
