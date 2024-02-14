@@ -18,6 +18,18 @@
      <img src="images/image3.PNG" width="150" height="150">
     </div>
 
+    <div class="image-container-4">
+     <img src="images/image4.PNG" width="250" height="250">
+    </div>
+
+    <div class="image-container-5">
+     <img src="images/image5.PNG" width="200" height="200">
+    </div>
+
+    <div class="image-container-6">
+     <img src="images/image6.PNG" width="250" height="250">
+    </div>
+
 <div class="title">
 <h1>
   The Saboteur, The Joykiller
@@ -78,7 +90,7 @@ body {
         transform: translate(-50%, -50%) scale(0.2);
       }
       100% {
-        left: 15%; /* Move to the center */
+        left: 15%; 
         transform: translate(-50%, -50%) scale(1);
       }
     }
@@ -107,10 +119,57 @@ transform: rotate(10deg);
 opacity: 70%;
 }
 
+
+
 .image-container-3 {
    position: absolute;
    top: 20%;
    left: 5%;
+}
+.image-container-3 img {
+transform: rotate(-70deg);
+opacity: 70%;
+}
+
+
+
+.image-container-4 {
+   position: absolute;
+   top: 10%;
+   left: 20%;
+}
+.image-container-4 img {
+transform: rotate(-180deg);
+opacity: 70%;
+}
+
+
+
+.image-container-5 {
+   position: absolute;
+   top: 80%;
+   left: 28%;
+   animation: scaleRotate 1.5s linear forwards;
+}
+@keyframes scaleRotate {
+      0% {
+        transform: scale(1) rotate(0deg);
+      }
+      50% {
+        transform: scale(1.5) rotate(180deg);
+      }
+      100% {
+        transform: scale(1) rotate(360deg);
+      }
+    }
+.image-container-5 img {
+opacity: 70%;
+}
+
+.image-container-6 {
+   position: absolute;
+   top: 70%;
+   left: 50%;
    animation: scaleRotate 1.5s linear forwards;
 }
 @keyframes scaleRotate {
@@ -125,10 +184,9 @@ opacity: 70%;
       }
     }
 
-.image-container-3 img {
-transform: rotate(-80deg);
+.image-container-6 img {
+opacity: 70%;
 }
-
 
 .title {
       font-family: 'Heyhoo';
@@ -183,9 +241,9 @@ h1 {
             top: 100%;
             text-decoration: none;
             border-radius: 30px 30px 30px 30px;
-            color: #761918;
+            color: #eee1c7;
             background-color: transparent;
-            border: 5px solid #761918;
+            border: 5px solid #eee1c7;
             padding: 5px 5px;
             text-align: center;
             justify-content: center;
@@ -197,7 +255,7 @@ h1 {
         }
 
 .navigation-button:hover {
-            color: #761918;
+            color: #eee1c7;
             border: 2px solid;
 }
 
