@@ -25,15 +25,16 @@
 <h2>
   The Saboteur, The Joykiller
 </h2>
-<a href="https://en.wikipedia.org/wiki/Apostrophe" >
-<h3>
-  Question Mark & Exclamation Mark
-</h3>
-</a>
-
 </div>
 
 <div class="hollow-rectangle">
+
+  <a href="https://en.wikipedia.org/wiki/Apostrophe" >
+    <h3>
+    Question Mark & Exclamation Mark
+    </h3>
+  </a>
+
   <div class="container">
    <img src="images/1.jpg" width="350" height="250">
   </div>
@@ -116,6 +117,8 @@ transform: rotate(10deg);
 
 .title {
       font-family: 'Heyhoo';
+      text-align: center;
+      justify-content: center;
       z-index: 1;
     }
 
@@ -131,30 +134,32 @@ h2 {
   position: absolute;
   top: 3%;
   left: 10.5%;
-  color: #eee1c7;
   font-size: 90px;
+  color: #eee1c7;
  }
+
+.hollow-rectangle {
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+            margin: 50px 200px 0px 200px;
+            width: 75vw; 
+            height: 80vh; 
+            border: 10px solid #3e528b;
+            background-color: #eee1c7;
+            z-index: -1;
+           
+}
 
 h3 {
   position: absolute;
   left: 40%;
   top: 25%;
   font-size: 15px;
+  font-family: 'Heyhoo';
   letter-spacing: 1px;
   color: #761918;
   text-decoration: underline;
-}
-
-.hollow-rectangle {
-            position: absolute;
-            left: 16%;
-            top: 6%;
-            width: 1000px; 
-            height: 700px; 
-            border: 10px solid #3e528b;
-            background-color: #eee1c7;
-            z-index: -1;
-           
 }
 
 .navigation-button {
