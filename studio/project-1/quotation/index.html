@@ -84,8 +84,6 @@
 
 body {
     background-color: #eee1c7;
-    height: 100vh;
-    margin: 30px 30px 30px 30px;
 }
 
 h1,h2 {
@@ -106,11 +104,12 @@ h2 {
 }
 
 .hollow-rectangle {
-
-            align-items: center;
-            justify-content: center;
+            display: flex;
+            position: absolute;
+            left: 5%;
+            top: 20%;
             width: 1300px; 
-            height: 600px; 
+            height: 580px; 
             border: 10px solid #232F61;
             border-radius: 8px 50px 10px 50px;
 }
@@ -139,11 +138,10 @@ h2 {
 }
 
 h3 {
-   font-size: 230px;
+   font-size: 200px;
    text-align: center;
    justify-content: center;
    font-family: 'Throwupz';
-   letter-spacing: 15px;
 }
 
 .navigation-button {
