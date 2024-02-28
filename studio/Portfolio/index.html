@@ -200,9 +200,6 @@ h2{
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #ef629f;
-    font-family: 'MermaidSwashCaps-Bold';
-    white-space: nowrap;
     margin-top: 50px;
 }
 
@@ -236,16 +233,22 @@ h2{
       transform: rotateY(180deg); 
     }
 
-p1 {
+p1,p2 {
+    color: #ef629f;
     font-size: 25px;
+    letter-spacing: 1px;
+    font-family: 'MermaidSwashCaps-Bold';
+    white-space: nowrap;
+    line-height: 1.5;
+    animation: colorChange 1.5s infinite alternate; 
 }
-
-p2 {
-    font-size: 20px;
-}
+@keyframes colorChange {
+    0% { color: #eecda3; }
+    100% { color:  #ef629f; }
+  }
 
 h3 {
-    margin-top: -70px;
+    margin-top: -60px;
 }
 
 .openDialog {
@@ -280,6 +283,7 @@ dialog {
       margin-right: 50px;
       cursor: auto;
     }
+
 dialog p {
         padding: 10px;
         color: #ef629f;
