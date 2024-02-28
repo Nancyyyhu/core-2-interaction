@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="style.css">
+ <link rel="icon" href="images/favicon.PNG" type="image/x-icon">  
+</head>
+    
+<body>
+<section id="page-1" class="page">
+    
+    <header>
+        <nav>
+            <a href="https://nancyyyhu.github.io/core-2-interaction/studio/portfolio/index.html#page-2"><b>关于我<br>About Me</b></a>
+            <a href="https://nancyyyhu.github.io/core-2-interaction/studio/portfolio/index.html#page-3"><b>我的家族<br>Family Tree</b></a>
+            <a href="https://nancyyyhu.github.io/core-2-interaction/studio/portfolio/index.html#page-4"><b>我的家乡<br>My Hometown</b></a>
+        </nav>
+    </header>
+    
+    <hr>
+
+    <h2>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p1>嗨！我是玥~</p1>
+                </div>
+                <div class="flip-card-back">
+                    <p2>I'm Yue! <br>Nice To Meet You~</p2>
+                </div>
+            </div>
+        </div>
+    </h2>
+
+    <h3>
+            <button class="openDialog "onclick="openDialog()"><b>欢迎进入!<br>Welcome In!</b></button>
+        <dialog id="myDialog">
+                <p>Hiii~My name is Hu Yue, you can also call me Nancy. To introduce myself briefly, I'm from China and I love my country very much. At the same time, I also enjoy learning about different cultures around the world, especially the literature & languages. If you get the chance to know me deeply, you will find that I have been the same from childhood to adulthood, no change, but there were indeed some changes.</p>
+            <button class="closeDialog" onclick="closeDialog()">关闭&nbsp;&nbsp;Close</button>
+        </dialog>
+    </h3>
+
+    <div class="image-container">
+        <div class="image">
+            <img src="images/ootd1.PNG" width="250" height="250">
+            <img src="images/ootd2.PNG" width="250" height="250">
+            <img src="images/ootd3.PNG" width="250" height="250">
+            <img src="images/ootd4.PNG" width="250" height="250">
+            <img src="images/ootd5.PNG" width="250" height="250">
+      </div>
+    </div>
+    <div>
+        <a href="#page-2" class="btn">About Me<i class="fas fa-arrow-circle-down"></i></a>
+    </div>
+</section>
+   
+<section id="page-2" class="page"></div>
+
+    <div class="graph-card">
+        <div class="graph front-graph">
+            <a href="#page-1" class="btn btn-dark">
+            Touch me
+        <i class="fas fa-arrow-circle-up"></i></a>
+        </div>
+    </div>
+    <div class="graph back-graph">
+      <img src="images/ootd10.PNG" width="500" height="500">
+    </div>
+    
+    <div>
+        <a href="#page-1" class="btn btn-dark">previous page<i class="fas fa-arrow-circle-up"></i></a>
+        <a href="#page-3" class="btn">next page<i class="fas fa-arrow-circle-down"></i></a>
+    </div>
+</section>
+
+<section id="page-3" class="page">
+
+        <h1>T-shirt&floor-length pants</h1>
+        <p>Monday is always the most tiring time of the day because it is the beginning of the working week, so usually on Monday, I will choose a very comfortable outfit, such as T-shirt with trousers. For example, T-shirt with pants has become one of the most popular combinations for commuting in people's daily life, which is convenient for work activities and never makes people feel strange, which is one of the classic combinations for clean fit.</p>
+    
+    <div>
+        <a href="#page-2" class="btn btn-dark">previous page<i class="fas fa-arrow-circle-up"></i></a>
+        <a href="#page-4" class="btn">next page<i class="fas fa-arrow-circle-down"></i></a>
+    </div>
+</section>
+
+<section id="page-4" class="page">
+
+<div>
+        <a href="#page-3" class="btn btn-dark">previous page<i class="fas fa-arrow-circle-up"></i></a>
+    </div>
+</section>
+<div class="hotxy"></div>
+
+<div class="custom-cursor"></div>
+</body>
+</html>
+
+<style>
+@font-face{
+     font-family: 'MATIOTTELEGANTFONT-Regular';
+     src:url('fonts/MATIOTTELEGANTFONT-Regular.woff') format('woff'),
+         url('fonts/MATIOTTELEGANTFONT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+     font-family: 'MermaidSwashCaps-Bold';
+     src:url('fonts/MermaidSwashCaps-Bold.woff') format('woff'),
+         url('fonts/MermaidSwashCaps-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    cursor: none;
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#page-1{background: var(--page-1-color);
+        background-image: linear-gradient(to bottom, #eecda3, #ef629f);
+    margin: 0; 
+    padding: 0;}
+#page-2{background: var(--page-2-color);
+        background-image: linear-gradient(to bottom, #ef629f, #eecda3);
+    margin: 0; 
+    padding: 0;}
+#page-3{background: var(--page-3-color);
+        background-image: linear-gradient(to bottom, #eecda3, #ef629f);
+    margin: 0; 
+    padding: 0;}
+#page-4{background: var(--page-4-color);
+        background-image: linear-gradient(to bottom, #eecda3, #ef629f);
+    margin: 0; 
+    padding: 0;}
+
+.btn {
+    display: inline-block;
+    padding: 15px 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ef629f;
+    background-color: #ffcebf;
+    transition: all 0.5s ease-in;
+    font-size: 15px;
+    font-family: 'MermaidSwashCaps-Bold';
+}
+
+.btn:hover{
+    color: #eecda3;
+    background-color: #ef629f;
+}
+
+header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: transparent;
+      font-family: 'MermaidSwashCaps-Bold';
+    }
+
+nav {
+      display: flex;
+    }
+
+nav a {
+      font-size: 20px;
+      color: #ef629f;
+      text-decoration: none;
+      margin: 0 150px;
+    }
+
+hr {
+      margin: 0;
+      border-right: 100vw solid #ef629f;
+  }
+
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ef629f;
+    font-family: 'MermaidSwashCaps-Bold';
+    white-space: nowrap;
+    margin-top: 50px;
+}
+
+.flip-card {
+      perspective: 100px; 
+      width: 150px;
+      height: 250px;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.6s; 
+    }
+
+.flip-card:hover {
+      transform: rotateY(180deg); 
+    }
+
+.flip-card-inner {
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+    }
+
+.flip-card-front,.flip-card-back {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      backface-visibility: hidden; 
+    }
+
+.flip-card-back {
+      transform: rotateY(180deg); 
+    }
+
+p1 {
+    font-size: 25px;
+}
+
+p2 {
+    font-size: 20px;
+}
+
+h3 {
+    margin-top: -70px;
+}
+
+.openDialog {
+        text-align: center;
+        background-color: #ffcebf;
+        color: #ef629f;
+        border: 2px solid #ef629f;
+        padding: 20px;
+        letter-spacing: 1px;
+        line-height: 1.5;
+        font-size: 20px;
+        font-family: 'MermaidSwashCaps-Bold';
+        cursor: pointer;
+}
+
+.closeDialog {
+        text-align: center;
+        background-color: #ffcebf;
+        color: #ef629f;
+        border: 2px solid #ef629f;
+        padding: 10px;
+        font-size: 15px;
+        font-family: 'MermaidSwashCaps-Bold';
+        cursor: pointer;
+}
+
+dialog {
+      background-image: linear-gradient(to bottom, #eecda3, #ffcebf);
+      padding: 20px;
+      border: none;
+      margin-left: 50px;
+      margin-right: 50px;
+      cursor: auto;
+    }
+dialog p {
+        padding: 10px;
+        color: #ef629f;
+        font-size: 20px;
+        font-family: 'MermaidSwashCaps-Bold';
+}
+
+.image-container img {
+    position: relative;
+    left: 10%;
+    transform: translateX(-50%);
+    opacity: 0; 
+    animation: dropImage 4s ease-in-out infinite; 
+}
+@keyframes dropImage {
+    0% {
+        top: -100%; 
+        opacity: 0; 
+    }
+    100% {
+        top: 65%; 
+        opacity: 1; 
+    }
+}
+
+.div {
+    overflow: hidden;
+    height: 118px;
+        }
+
+.box {
+    background: black;
+    padding: 10px 0;
+    white-space: nowrap;
+    overflow-y: auto;
+        }
+        
+.box::-webkit-scrollbar {
+            display: none;
+        }
+
+.box1 {
+    width: 50%;
+    margin-left: 3%;
+    height: 100px;
+    background: lightpink;
+    display: inline-block;
+}
+
+.custom-cursor {
+  width: 20px;
+  height: 20px;
+  background-color: #eecda3; 
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none; 
+  transform: translate(-50%, -50%);
+}
+</style>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+
+function openDialog() {
+      document.getElementById('myDialog').showModal();
+    }
+function closeDialog() {
+      document.getElementById('myDialog').close();
+    }
+
+document.addEventListener('DOMContentLoaded', function () {
+  const cursor = document.querySelector('.custom-cursor');
+
+  document.addEventListener('mousemove', function (e) {
+    // Update the cursor position based on the mouse coordinates
+    cursor.style.left = e.pageX + 'px';
+    cursor.style.top = e.pageY + 'px';
+  });
+});
+</script>
