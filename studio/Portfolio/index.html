@@ -12,9 +12,9 @@
     
     <header>
         <nav>
-            <a href="https://nancyyyhu.github.io/core-2-interaction/studio/portfolio/index.html#page-2"><b>关于我<br>About Me</b></a>
-            <a href="https://nancyyyhu.github.io/core-2-interaction/studio/portfolio/index.html#page-3"><b>我的家族<br>Family Tree</b></a>
-            <a href="https://nancyyyhu.github.io/core-2-interaction/studio/portfolio/index.html#page-4"><b>我的家乡<br>My Hometown</b></a>
+            <a href="https://nancyyyhu.github.io/core-2-interaction/studio/portfolio/index.html#page-2" class="zoom-text"><b>关于我<br>About Me</b></a>
+            <a href="https://nancyyyhu.github.io/core-2-interaction/studio/portfolio/index.html#page-3" class="zoom-text"><b>我的家族<br>Family Tree</b></a>
+            <a href="https://nancyyyhu.github.io/core-2-interaction/studio/portfolio/index.html#page-4" class="zoom-text"><b>我的家乡<br>My Hometown</b></a>
         </nav>
     </header>
     
@@ -36,18 +36,20 @@
     <h3>
             <button class="openDialog "onclick="openDialog()"><b>欢迎进入!<br>Welcome In!</b></button>
         <dialog id="myDialog">
-                <p>Hiii~My name is Hu Yue, you can also call me Nancy. To introduce myself briefly, I'm from China and I love my country very much. At the same time, I also enjoy learning about different cultures around the world, especially the literature & languages. If you get the chance to know me deeply, you will find that I have been the same from childhood to adulthood, no change, but there were indeed some changes.</p>
+                <p>Hiii~My name is Hu Yue, you can also call me Nancy. I would Like to introduce myself briefly, I'm from China and I love my country very much. At the same time, I also enjoy learning about different cultures around the world, especially the literature & languages. I’m always emotionally stable and confident, you'll find it easily to get along with me. I enjoy life and everything it brings to me</p>
             <button class="closeDialog" onclick="closeDialog()">关闭&nbsp;&nbsp;Close</button>
         </dialog>
     </h3>
 
     <div class="image-container">
         <div class="image">
-            <img src="images/ootd1.PNG" width="250" height="250">
-            <img src="images/ootd2.PNG" width="250" height="250">
-            <img src="images/ootd3.PNG" width="250" height="250">
-            <img src="images/ootd4.PNG" width="250" height="250">
-            <img src="images/ootd5.PNG" width="250" height="250">
+            <img src="images/1.PNG" width="150" height="150">
+            <img src="images/2.PNG" width="150" height="150">
+            <img src="images/3.PNG" width="150" height="150">
+            <img src="images/4.PNG" width="150" height="150">
+            <img src="images/5.PNG" width="150" height="150">
+            <img src="images/6.PNG" width="150" height="150">
+            <img src="images/7.PNG" width="150" height="150">
       </div>
     </div>
     <div>
@@ -136,7 +138,7 @@ body {
 }
 
 #page-1{background: var(--page-1-color);
-        background-image: linear-gradient(to bottom, #eecda3, #ef629f);
+        background-color: #081b26;
     margin: 0; 
     padding: 0;}
 #page-2{background: var(--page-2-color);
@@ -190,6 +192,14 @@ nav a {
       margin: 0 150px;
     }
 
+.zoom-text {
+      transition: transform 0.3s ease-in-out;
+    }
+
+.zoom-text:hover {
+      transform: scale(1.3); 
+    }
+
 hr {
       margin: 0;
       border-right: 100vw solid #ef629f;
@@ -234,7 +244,6 @@ h2{
     }
 
 p1,p2 {
-    color: #ef629f;
     font-size: 25px;
     letter-spacing: 1px;
     font-family: 'MermaidSwashCaps-Bold';
@@ -243,7 +252,7 @@ p1,p2 {
     animation: colorChange 1.5s infinite alternate; 
 }
 @keyframes colorChange {
-    0% { color: #eecda3; }
+    0% { color: #ffcebf; }
     100% { color:  #ef629f; }
   }
 
@@ -293,10 +302,12 @@ dialog p {
 
 .image-container img {
     position: relative;
-    left: 10%;
-    transform: translateX(-50%);
-    opacity: 0; 
-    animation: dropImage 4s ease-in-out infinite; 
+    left: 5%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 15px;
+    transform: translateX(-50%); 
+    animation: dropImage 2s ease-in-out infinite alternate; 
 }
 @keyframes dropImage {
     0% {
