@@ -12,13 +12,17 @@
     
     <header>
         <nav>
-            <a href="https://nancyyyhu.github.io/core-2-interaction/studio/portfolio/#page-2" class="zoom-text"><b>Joy<br>☆ ～('▽^人)</b></a>
-            <a href="https://nancyyyhu.github.io/core-2-interaction/studio/portfolio/#page-3" class="zoom-text"><b>Embarassment<br>(ノ*°▽°*)</b></a>
-            <a href="https://nancyyyhu.github.io/core-2-interaction/studio/portfolio/#page-4" class="zoom-text"><b>Sadness<br>｡･ﾟﾟ*(>д<)*ﾟﾟ･｡</b></a>
+            <a href="https://kaomoji.ru/en/#joy" class="zoom-text"><b>Joy<br>☆ ～('▽^人)</b></a>
+            <a href="https://kaomoji.ru/en/#embarrassment" class="zoom-text"><b>Embarassment<br>(ノ*°▽°*)</b></a>
+            <a href="https://kaomoji.ru/en/#sadness" class="zoom-text"><b>Sadness<br>｡･ﾟﾟ*(>д<)*ﾟﾟ･｡</b></a>
         </nav>
     </header>
-    
     <hr>
+
+    <div class="text">
+        <p>Kaomoji</p>
+    </div>
+
     <div class="image-container-1">
         <div class="image-grid">
             <img src="images/11.PNG" width="150" height="150">
@@ -38,10 +42,6 @@
 </section>
    
 <section id="page-2" class="page"></div>
-    
-    <div class="text">
-    <p>Kaomoji</p>
-    </div>
 
 <div class="grid">
      <div class="flip-card-1">
@@ -150,7 +150,6 @@ body {
 }
 
 .page{
-    display: flex;
     flex-direction: column;
     height: 100vh;
     justify-content: center;
@@ -217,11 +216,28 @@ hr {
 
 
 
+.text {
+    text-align: center;
+    justify-content: center;
+    margin-top: -20px;
+    color: #ffcebf;
+    font-size: 100px;
+    font-family: 'MermaidSwashCaps-Bold';
+    z-index: 1;
+    animation: colorChange-1 1.5s infinite alternate; 
+}
+@keyframes colorChange-1 {
+    0% { color: #ffcebf; }
+    100% { color:  #314656; }
+  }
+
+
+
 .image-container-1 {
     display: grid;
     place-items: center;
-    margin-top: -10px;
-    margin-bottom: -150px;
+    margin-top: -300px;
+    margin-bottom: -200px;
     height: 100%;
 }
 .image-grid {
@@ -240,28 +256,14 @@ hr {
 }
 
 
-.text {
-    text-align: center;
-    justify-content: center;
-    margin-top: -50px;
-    color: #ffcebf;
-    font-size: 100px;
-    font-family: 'MermaidSwashCaps-Bold';
-    z-index: 1;
-    animation: colorChange-1 1.5s infinite alternate; 
-}
-@keyframes colorChange-1 {
-    0% { color: #ffcebf; }
-    100% { color:  #314656; }
-  }
-
-
 
 .grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr); 
     place-items: center;
-    margin-bottom: 100px;
+    position: relative;
+    top: 100px;
+    margin-bottom: 300px;
     padding: 20px;
 }
 
