@@ -1,14 +1,88 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
 
- <body>
+<body>
+  <a href="https://nancyyyhu.github.io/core-2-interaction/studio/project-2/entries/homepage/index"><div class="text">
+    Poems of Youth
+  </div></a>
+</body>
 
- </body>
+<style>
+@font-face{
+     font-family: 'MATIOTTELEGANTFONT-Regular';
+     src:url('fonts/MATIOTTELEGANTFONT-Regular.woff') format('woff'),
+         url('fonts/MATIOTTELEGANTFONT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 
- <style>
-   
- </style>
+@font-face{
+     font-family: 'MermaidSwashCaps-Bold';
+     src:url('fonts/MermaidSwashCaps-Bold.woff') format('woff'),
+         url('fonts/MermaidSwashCaps-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b75a03;
+}
+a {
+  text-decoration: none;
+}
+.text{
+    position: relative;
+    color: #eeb528;
+    font-size: 65px;
+    font-family: 'MATIOTTELEGANTFONT-Regular';
+    letter-spacing: 3px;
+    width: 67px;
+    white-space: nowrap;
+    overflow: hidden;
+    --count: 8;
+    animation: typing 3s steps(var(--count)) forwards;
+    -webkit-box-reflect: below 1.5px linear-gradient(transparent 60%, #eeb528);
+}
+@keyframes typing {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: calc(var(--count) * 65px);
+    }
+} 
+.text::after{
+    content: "";
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: 'MATIOTTELEGANTFONT-Regular';
+    background-color: #601c03;
+    animation: blink 1s linear infinite;
+}
+@keyframes blink {
+    0%,49%{
+        opacity: 0;
+    }
+    50%,100%{
+        opacity: 1;
+    }
+}
+</style>
