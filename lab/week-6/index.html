@@ -25,12 +25,12 @@
 
     <div class="image-container-1">
         <div class="image-grid">
-            <img src="images/11.PNG" width="150" height="150">
-            <img src="images/22.PNG" width="150" height="150">
-            <img src="images/33.PNG" width="150" height="150">
-            <img src="images/44.PNG" width="150" height="150">
-            <img src="images/55.PNG" width="150" height="150">
-            <img src="images/77.PNG" width="150" height="150">
+            <img class="enlarge-image" src="images/11.PNG" width="150" height="150">
+            <img class="enlarge-image" src="images/22.PNG" width="150" height="150">
+            <img class="enlarge-image" src="images/33.PNG" width="150" height="150">
+            <img class="enlarge-image" src="images/44.PNG" width="150" height="150">
+            <img class="enlarge-image" src="images/55.PNG" width="150" height="150">
+            <img class="enlarge-image" src="images/77.PNG" width="150" height="150">
       </div>
     </div>
 
@@ -252,6 +252,18 @@ hr {
     column-gap: 20px; 
     row-gap: 20px; 
 }
+.enlarge-image {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  opacity: 60%;
+}
+
+.enlarge-image:hover {
+  transform: scale(1.4); 
+  opacity: 100%;
+}
+
+
 
 .image-container-2 {
     display: flex;
