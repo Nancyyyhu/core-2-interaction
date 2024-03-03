@@ -118,29 +118,38 @@
     <div class="card-1">
             <img src="images/31.jpg" alt="">
             <div class="text-1">
-                <h>Annual Artistic Photo</h>
+                <h>Annual &nbsp Artistic &nbsp Photo</h>
                 <p>Every Chinese New Year, my mother would bring me to take artistic photos to record the end of the year. In my memory, I always like to wear the beautiful clothes of the photography studio, paint the makeup that symbolizes7 adulthood, and strike an exaggerated pose; Back then, I was confident...</p>
             </div>
     </div>
+    <div class="vertical-text-1">
+        <p1>· 2007/01/26</p1>
+    </div>
+   
     <div class="card-2">
             <img src="images/33.JPG" alt="">
             <div class="text-2">
-                <h>Because I love flying kites</h>
+                <h>Because &nbsp I &nbsp love &nbsp flying &nbsp kites</h>
                 <p>The greatest happiness for me, as a kindergarten girl, was just a kite string in my hand. Running against the wind, enjoy the joy of childhood...</p>
             </div>
     </div>
-    <p1>· 2008/08/12</p1>
+    <div class="vertical-text-2">
+        <p1>· 2008/08/12</p1>
+    </div>
     <div class="card-3">
-            <img src="images/32.JPG" alt="">
+            <img src="images/32.jpg" alt="">
             <div class="text-3">
-                <h>Because I love flying kites</h>
-                <p>The greatest happiness for me, as a kindergarten girl, was just a kite string in my hand. Running against the wind, enjoy the joy of childhood...</p>
+                <h>Yeah!</h>
+                <p>When I was a child, I liked to take pictures. Whenever the camera lens was pointed at me, I always liked to make a "yeah" gesture...</p>
             </div>
+    </div>
+    <div class="vertical-text-3">
+        <p1>· 2006/07/15</p1>
     </div>
 
     <div>
-        <a href="#page-2" class="btn btn-dark">About Me<i class="fas fa-arrow-circle-up"></i></a>
-        <a href="#page-4" class="btn">My Hometown<i class="fas fa-arrow-circle-down"></i></a>
+        <a href="#page-2" class="btn-word"><i class="fas fa-arrow-circle-up"></i>Scroll Up<a href="#page-2" class="btn btn-dark">↑<i class="fas fa-arrow-circle-up"></i></a>
+        <a href="#page-4" class="btn-word-1"><i class="fas fa-arrow-circle-up"></i>Scroll Down<a href="#page-4" class="btn-1">↓<i class="fas fa-arrow-circle-down"></i></a>
     </div>
 </section>
 
@@ -284,6 +293,36 @@ body {
     position: absolute;
     left: 82%;
     top: 190%;
+}
+#page-3 .btn {
+    position: absolute;
+    left: 90%;
+    top: 281%;
+    width: 30px;
+    height: 30px;
+    padding: 15px 15px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+#page-3 .btn-word {
+    position: absolute;
+    left: 83.5%;
+    top: 285%;
+}
+#page-3 .btn-1 {
+    position: absolute;
+    left: 90%;
+    top: 290%;
+    width: 30px;
+    height: 30px;
+    padding: 15px 15px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+#page-3 .btn-word-1 {
+    position: absolute;
+    left: 82%;
+    top: 290%;
 }
 
 
@@ -446,10 +485,10 @@ nav a {
 }
 
 .card-1{
-    width: 400px;
-    height: 600px;
+    width: 450px;
+    height: 650px;
     overflow: hidden;
-    margin: 30px;
+    margin-left: 30px;
     background-color: #000;
     color: #fff;
     cursor: pointer;
@@ -521,6 +560,16 @@ nav a {
     opacity: 1;
     transition-delay: 0s;
 }
+.vertical-text-1 {
+    position: relative;
+    top: -68%;
+    left: 39%;
+    font-size: 20px;
+    font-family: 'MermaidSwashCaps-Bold'; 
+    writing-mode: vertical-rl; 
+    text-orientation: mixed; 
+    white-space: nowrap; 
+}
 
 
 
@@ -535,7 +584,7 @@ nav a {
     cursor: pointer;
     position: relative;
     left: 40%;
-    top: -50%;
+    top: -60%;
 }
 .card-2 img{
     width: 100%;
@@ -602,9 +651,9 @@ nav a {
     opacity: 1;
     transition-delay: 0s;
 }
-p1{
+.vertical-text-2{
     position: relative;
-    top: -52%;
+    top: -63%;
     left: 42%;
     font-size: 20px;
     font-family: 'MermaidSwashCaps-Bold'; 
@@ -612,17 +661,18 @@ p1{
 
 
 
+
 .card-3{
-    width: 300px;
-    height: 350px;
+    width: 350px;
+    height: 450px;
     overflow: hidden;
     margin: 30px;
     background-color: #000;
     color: #fff;
     cursor: pointer;
     position: relative;
-    left: 40%;
-    top: -50%;
+    left: 65%;
+    top: -135%;
 }
 .card-3 img{
     width: 100%;
@@ -631,7 +681,7 @@ p1{
 }
 .card-3 .text-3{
     position: absolute;
-    top: 150px;
+    top: 250px;
     left: 30px;
     bottom: 30px;
     right: 30px;
@@ -688,7 +738,13 @@ p1{
     opacity: 1;
     transition-delay: 0s;
 }
-
+.vertical-text-3{
+    position: relative;
+    top: -198%;
+    left: 67%;
+    font-size: 20px;
+    font-family: 'MermaidSwashCaps-Bold'; 
+}
 
 
 
