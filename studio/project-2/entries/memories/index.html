@@ -15,9 +15,9 @@
             <a href="https://nancyyyhu.github.io/core-2-interaction/studio/portfolio/#page-2" class="zoom-text">My &nbsp Youth &nbsp Brochure</a>
         </main>
         <nav>
-            <a href="https://nancyyyhu.github.io/core-2-interaction/studio/portfolio/#page-2" class="zoom-text">Memories</a>
-            <a href="https://nancyyyhu.github.io/core-2-interaction/studio/portfolio/#page-3" class="zoom-text"><b>Old-Items</b></a>
-            <a href="https://nancyyyhu.github.io/core-2-interaction/studio/portfolio/#page-4" class="zoom-text"><b>People</a>
+            <a href="https://nancyyyhu.github.io/core-2-interaction/studio/project-2/entries/memories/index" class="zoom-text">Memories</a>
+            <a href="https://nancyyyhu.github.io/core-2-interaction/studio/project-2/entries/old-items/index" class="zoom-text"><b>Old-Items</b></a>
+            <a href="https://nancyyyhu.github.io/core-2-interaction/studio/project-2/entries/people/index" class="zoom-text"><b>People</a>
         </nav>
     </header>
 
@@ -51,7 +51,7 @@
 <section id="page-2" class="page"></div>
     
     <div class="title-1">
-        Portraits
+        Stories of Memories
     </div>
 
     <div class="image-container-1">
@@ -59,30 +59,30 @@
             <div class="grid-item">
                 <img class="enlarge-image" src="images/26.jpg">
                 <div class="caption">
-                    <a href="#">Link to another page</a>
+                    <a href="https://nancyyyhu.github.io/core-2-interaction/studio/project-2/entries/barbeque/index">About: Time In Kindergarten</a>
                 </div>
-                <p>Your text for image 1.</p>
+                <p>The memory of kindergarten has been a little bit far away for me, but there are still some fragments of preciousness, fresh memories...</p>
             </div>
             <div class="grid-item">
                 <img class="enlarge-image" src="images/21.JPG">
                 <div class="caption">
-                    <a href="#">Link to another page</a>
+                    <a href="https://nancyyyhu.github.io/core-2-interaction/studio/project-2/entries/carnival/index">Diary: Barbeque Day</a>
                 </div>
-                <p>Your text for image 1.</p>
+                <p>One of my favorite things when I was a child was to go to the Forest Park with my mother and many other friends to have a barbecue. I can't cook, either do grill, all I know is to enjoy the day...</p>
             </div>
             <div class="grid-item">
                 <img class="enlarge-image" src="images/28.jpg">
                 <div class="caption">
-                    <a href="#">Link to another page</a>
+                    <a href="https://nancyyyhu.github.io/core-2-interaction/studio/project-2/entries/eastlake/index">"Xi Yang Yang" Carnival</a>
                 </div>
-                <p>Your text for image 1.</p>
+                <p>My zodiac sign is the sheep. In the year of recurrent year in the twelve-year cycle, my mother took me to a carnival called "Xi Yang Yang". I will never forget that year...</p>
             </div>
             <div class="grid-item">
                 <img class="enlarge-image" src="images/27.jpg">
                 <div class="caption">
-                    <a href="#">Link to another page</a>
+                    <a href="https://nancyyyhu.github.io/core-2-interaction/studio/project-2/entries/kindergarten/index">Story: Eastlake</a>
                 </div>
-                <p>Your text for image 1.</p>
+                <p>My hometown is called Wuhan. The East Lake is a very famous scenic spot there. In March, the spring breeze blows again. Every time to this poetic season, I will go to the East Lake with my family to enjoy the scenery...</p>
             </div>
         </div>
     </div>
@@ -300,7 +300,7 @@ nav a {
 
 #imageContainer {
             position: relative;
-            top: 17%;
+            top: 20%;
             left: 20%;
             text-align: center;
         }
@@ -318,7 +318,6 @@ nav a {
             height: 300px;
             width: 500px;
             word-wrap: break-word;
-
             font-size: 50px;
             font-family: 'MermaidSwashCaps-Bold';
             margin-top: 10px;
@@ -344,7 +343,7 @@ nav a {
 .title-1 {
     position: relative;
     top: 3%;
-    left: 3%;
+    left: 10%;
     color: black;
     font-size: 50px;
     font-family: 'MermaidSwashCaps-Bold'; 
@@ -352,19 +351,18 @@ nav a {
 .image-container-1 {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .image-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
-    gap: 25px; 
+    gap: 35px; 
     margin-top: 20px;
 }
 .enlarge-image {
     max-width: 280px;
     width: 100%;
     height: auto;
-    cursor: pointer;
 }
 .grid-item {
   display: flex;
@@ -373,27 +371,31 @@ nav a {
 }
 .caption {
     width: 250px;
-    text-align: center;
+    
     margin-top: 20px;
     transition: transform 0.3s ease-in-out;
 }
 .caption:hover {
-transform: scale(1.1);
-}
-.grid-item p {
-  font-size: 20px;
-  margin: 0;
+  transform: scale(1.1);
 }
 .caption a {
+  font-size: 30px;
+  font-family: 'MermaidSwashCaps-Bold'; 
   color: black; 
-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 .caption a:hover {
   transform: scale(1.1); 
 }
+.grid-item p {
+  font-size: 13px;
+  font-family: 'MermaidSwashCaps-Bold'; 
+  width: 250px;
+  margin-top: 10px;
+}
 .svg-image-2 {
     position: relative;
-    top: -10%;
+    top: -15%;
     width: 1000px;
     height: 1000px;
     z-index: -2;
