@@ -57,32 +57,32 @@
     <div class="image-container-1">
         <div class="image-grid">
             <div class="grid-item">
-                <img class="enlarge-image" src="images/26.jpg">
+                <img class="enlarge-image" src="images/21.jpg">
                 <div class="caption">
                     <a href="https://nancyyyhu.github.io/core-2-interaction/studio/project-2/entries/barbeque/index">About: Time In Kindergarten</a>
                 </div>
                 <p>The memory of kindergarten has been a little bit far away for me, but there are still some fragments of preciousness, fresh memories...</p>
             </div>
             <div class="grid-item">
-                <img class="enlarge-image" src="images/21.JPG">
+                <img class="enlarge-image" src="images/22.JPG">
                 <div class="caption">
                     <a href="https://nancyyyhu.github.io/core-2-interaction/studio/project-2/entries/carnival/index">Diary: Barbeque Day</a>
                 </div>
                 <p>One of my favorite things when I was a child was to go to the Forest Park with my mother and many other friends to have a barbecue. I can't cook, either do grill, all I know is to enjoy the day...</p>
             </div>
             <div class="grid-item">
-                <img class="enlarge-image" src="images/28.jpg">
+                <img class="enlarge-image" src="images/23.jpg">
                 <div class="caption">
                     <a href="https://nancyyyhu.github.io/core-2-interaction/studio/project-2/entries/eastlake/index">"Xi Yang Yang" Carnival</a>
                 </div>
                 <p>My zodiac sign is the sheep. In the year of recurrent year in the twelve-year cycle, my mother took me to a carnival called "Xi Yang Yang". I will never forget that year...</p>
             </div>
             <div class="grid-item">
-                <img class="enlarge-image" src="images/27.jpg">
+                <img class="enlarge-image" src="images/24.jpg">
                 <div class="caption">
                     <a href="https://nancyyyhu.github.io/core-2-interaction/studio/project-2/entries/kindergarten/index">Story: Eastlake</a>
                 </div>
-                <p>My hometown is called Wuhan. The East Lake is a very famous scenic spot there. In March, the spring breeze blows again. Every time to this poetic season, I will go to the East Lake with my family to enjoy the scenery...</p>
+                <p>My hometown is called Wuhan, and the East Lake is a very famous scenic spot there. In March, the spring breeze blows again. Every time to this poetic season, I will go to the East Lake with my family to enjoy the scenery...</p>
             </div>
         </div>
     </div>
@@ -109,8 +109,34 @@
 </section>
 
 <section id="page-3" class="page">
+    
+    <div class="title-2">
+        Stories of Memories-2
+        <p>Story Continued......</p>
+    </div>
 
-   
+    <div class="card-1">
+            <img src="images/31.jpg" alt="">
+            <div class="text-1">
+                <h>Annual Artistic Photo</h>
+                <p>Every Chinese New Year, my mother would bring me to take artistic photos to record the end of the year. In my memory, I always like to wear the beautiful clothes of the photography studio, paint the makeup that symbolizes7 adulthood, and strike an exaggerated pose; Back then, I was confident...</p>
+            </div>
+    </div>
+    <div class="card-2">
+            <img src="images/33.JPG" alt="">
+            <div class="text-2">
+                <h>Because I love flying kites</h>
+                <p>The greatest happiness for me, as a kindergarten girl, was just a kite string in my hand. Running against the wind, enjoy the joy of childhood...</p>
+            </div>
+    </div>
+    <p1>· 2008/08/12</p1>
+    <div class="card-3">
+            <img src="images/32.JPG" alt="">
+            <div class="text-3">
+                <h>Because I love flying kites</h>
+                <p>The greatest happiness for me, as a kindergarten girl, was just a kite string in my hand. Running against the wind, enjoy the joy of childhood...</p>
+            </div>
+    </div>
 
     <div>
         <a href="#page-2" class="btn btn-dark">About Me<i class="fas fa-arrow-circle-up"></i></a>
@@ -341,9 +367,10 @@ nav a {
 
 
 .title-1 {
-    margin-top: 50px;
-    margin-bottom: -20px;
-    margin-left: 150px;
+    position: relative;
+    top: 5%;
+    left: 5%;
+    margin-bottom: 50px;
     color: black;
     font-size: 50px;
     font-family: 'MermaidSwashCaps-Bold'; 
@@ -404,6 +431,267 @@ nav a {
 
 
 
+.title-2 {
+    position: relative;
+    top: 5%;
+    left: 5%;
+    color: black;
+    font-size: 50px;
+    font-family: 'MermaidSwashCaps-Bold'; 
+    margin-bottom: -30px;
+}
+.title-2 p{
+    font-size: 15px;
+    font-family: 'MermaidSwashCaps-Bold'; 
+}
+
+.card-1{
+    width: 400px;
+    height: 600px;
+    overflow: hidden;
+    margin: 30px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    left: 5%;
+    top: 10%;
+}
+.card-1 img{
+    width: 100%;
+    height: 100%;
+    transition: 0.35s;
+}
+.card-1 .text-1{
+    position: absolute;
+    top: 350px;
+    left: 30px;
+    bottom: 30px;
+    right: 30px;
+    padding: 0 18px;
+
+    font-family: 'MermaidSwashCaps-Bold'; 
+}
+.card-1 .text-1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 100%;
+    border-left: 4px solid rgba(255,255,255,0.8);
+    background-color: rgba(255,255,255,0.5);
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0.6s;
+    font-family: 'MermaidSwashCaps-Bold'; 
+}
+.card-1 .text-1 h,
+.card-1 .text-1 p{
+    margin-bottom: 6px;
+    opacity: 0;
+    transition: 0.35s;
+}
+.card-1 .text-1 h{
+    font-size: 20px;
+    text-transform: uppercase;
+    transform: translate(30%,0%);
+    transition-delay: 0.3s;
+}
+.card-1 .text-1 p{
+    font-size: 15px;
+    transform: translate(0%,30%);
+}
+.card-1:hover img{
+    opacity: 0.3;
+}
+.card-1:hover .text-1 h{
+    opacity: 1;
+    transform: translate(0%,0%);
+    transition-delay: 0.4s;
+}
+.card-1:hover .text-1 p{
+    opacity: 0.6;
+    transform: translate(0%,0%);
+    transition-delay: 0.6s;
+}
+.card-1:hover .text-1::before{
+    background-color: rgba(255,255,255,0);
+    left: 0;
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+
+
+
+.card-2{
+    width: 300px;
+    height: 350px;
+    overflow: hidden;
+    margin: 30px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    left: 40%;
+    top: -50%;
+}
+.card-2 img{
+    width: 100%;
+    height: 100%;
+    transition: 0.35s;
+}
+.card-2 .text-2{
+    position: absolute;
+    top: 150px;
+    left: 30px;
+    bottom: 30px;
+    right: 30px;
+    padding: 0 18px;
+    
+    font-family: 'MermaidSwashCaps-Bold'; 
+}
+.card-2 .text-2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 100%;
+    border-left: 4px solid rgba(255,255,255,0.8);
+    background-color: rgba(255,255,255,0.5);
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0.6s;
+    font-family: 'MermaidSwashCaps-Bold'; 
+}
+.card-2 .text-2 h,
+.card-2 .text-2 p{
+    margin-bottom: 6px;
+    opacity: 0;
+    transition: 0.35s;
+}
+.card-2 .text-2 h{
+    font-size: 20px;
+    text-transform: uppercase;
+    transform: translate(30%,0%);
+    transition-delay: 0.3s;
+}
+.card-2 .text-2 p{
+    font-size: 15px;
+    transform: translate(0%,30%);
+}
+
+.card-2:hover img{
+    opacity: 0.3;
+}
+.card-2:hover .text-2 h{
+    opacity: 1;
+    transform: translate(0%,0%);
+    transition-delay: 0.4s;
+}
+.card-2:hover .text-2 p{
+    opacity: 0.6;
+    transform: translate(0%,0%);
+    transition-delay: 0.6s;
+}
+.card-2:hover .text-2::before{
+    background-color: rgba(255,255,255,0);
+    left: 0;
+    opacity: 1;
+    transition-delay: 0s;
+}
+p1{
+    position: relative;
+    top: -52%;
+    left: 42%;
+    font-size: 20px;
+    font-family: 'MermaidSwashCaps-Bold'; 
+}
+
+
+
+.card-3{
+    width: 300px;
+    height: 350px;
+    overflow: hidden;
+    margin: 30px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    left: 40%;
+    top: -50%;
+}
+.card-3 img{
+    width: 100%;
+    height: 100%;
+    transition: 0.35s;
+}
+.card-3 .text-3{
+    position: absolute;
+    top: 150px;
+    left: 30px;
+    bottom: 30px;
+    right: 30px;
+    padding: 0 18px;
+    font-size: 20px;
+    font-family: 'MermaidSwashCaps-Bold'; 
+}
+.card-3 .text-3::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 100%;
+    border-left: 4px solid rgba(255,255,255,0.8);
+    background-color: rgba(255,255,255,0.5);
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0.6s;
+    font-family: 'MermaidSwashCaps-Bold'; 
+}
+.card-3 .text-3 h,
+.card-3 .text-3 p{
+    margin-bottom: 6px;
+    opacity: 0;
+    transition: 0.35s;
+}
+.card-3 .text-3 h{
+    text-transform: uppercase;
+    transform: translate(30%,0%);
+    transition-delay: 0.3s;
+}
+.card-3 .text-3 p{
+    font-size: 15px;
+    transform: translate(0%,30%);
+}
+
+.card-3:hover img{
+    opacity: 0.3;
+}
+.card-3:hover .text-3 h{
+    opacity: 1;
+    transform: translate(0%,0%);
+    transition-delay: 0.4s;
+}
+.card-3:hover .text-3 p{
+    opacity: 0.6;
+    transform: translate(0%,0%);
+    transition-delay: 0.6s;
+}
+.card-3:hover .text-3::before{
+    background-color: rgba(255,255,255,0);
+    left: 0;
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+
+
+
 
 .custom-cursor {
   width: 20px;
@@ -420,6 +708,21 @@ nav a {
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script type="text/javascript">
+
+document.addEventListener('DOMContentLoaded', function () {
+const colors = ['#fdb5b8','#f0c9cc','#bd8284','#f4bcbb']; 
+let currentColorIndex = 0;
+function changeBackgroundColor() {
+document.body.style.backgroundColor = colors[currentColorIndex];
+    currentColorIndex = (currentColorIndex + 1) % colors.length;
+    }
+changeBackgroundColor();
+setInterval(changeBackgroundColor, 4000);
+    });
+
+
+
+
 
 let currentImage = 1;
     const totalImages = 5;
@@ -463,18 +766,6 @@ let currentImage = 1;
     }
 
 
-
-    document.addEventListener('DOMContentLoaded', function () {
-    const colors = ['#fdb5b8','#f0c9cc','#bd8284','#f4bcbb']; 
-    let currentColorIndex = 0;
-
-    function changeBackgroundColor() {
-        document.body.style.backgroundColor = colors[currentColorIndex];
-        currentColorIndex = (currentColorIndex + 1) % colors.length;
-    }
-    changeBackgroundColor();
-    setInterval(changeBackgroundColor, 4000);
-    });
 
 
 
