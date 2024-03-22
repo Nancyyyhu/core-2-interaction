@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="style.css">
+ <link rel="icon" href="images/favicon.PNG" type="image/x-icon">  
+</head>
+
+<body>
+  <div id=container></div>
+</body>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+
+let collection = [
+    {
+        "Contents": "Accompanied my mother to barbecue with a group of aunts and uncles for the first time,  took pictures on the lawn as a souvenir",
+        "Sites": "He Ping Park in Wuhan",
+        "Time": "2009/12/09",
+        "Models_of_Camera": "Canon ixus 800 IS",
+        "Why_Special?": "The experience of attending an outdoor barbecue for the first time in my life is very memorable",
+        "": ""
+    },
+    {
+        "Contents": "I snapped a picture on a random picnic cloth when went to barbecue next year",
+        "Sites": "Forest Park in Wuhan",
+        "Time": "2008/10/03",
+        "Models_of_Camera": "Canon ixus II",
+        "Why_Special?": "The second barbecue has been in grade one of primary school, and this punch card photo is a very good memorial to the experience of picnicing with the friends.",
+        "": ""
+    },
+    {
+        "Contents": "Put on dad's sunglasses and pretend to be an adult",
+        "Sites": "Forest Park in Wuhan",
+        "Time": "2008/10/03",
+        "Models_of_Camera": "Canon ixus II",
+        "Why_Special?": "This photo is super cool! It's so cute to put my dad's sunglasses on, and it really shows me as a little girl.",
+        "": ""
+    },
+    {
+        "Contents": "A photo taken with the back of the children at the barbecue",
+        "Sites": "Forest Park in Wuhan",
+        "Time": "2008/10/03",
+        "Models_of_Camera": "Canon ixus II",
+        "Why_Special?": "Although the photo is a little out of focus, it shows a harmonious picture of everyone eating barbecue together.",
+        "": ""
+    },
+    {
+        "Contents": "A photo taken on the gym equipment at Forest Park",
+        "Sites": "Forest Park in Wuhan",
+        "Time": "2008/10/03",
+        "Models_of_Camera": "Canon ixus II",
+        "Why_Special?": "I can't help laughing out loud when I see this picture. It is a picture of me waiting for other friends, and it can be captured from my expression that I can't wait to start the \"barbecue business\".",
+        "": ""
+    },
+    {
+        "Contents": "A picture of all the friends at the barbecue",
+        "Sites": "Forest Park in Wuhan",
+        "Time": "2008/10/03",
+        "Models_of_Camera": "Canon ixus II",
+        "Why_Special?": "This photo is the only one of all the children together, which is very memorable.",
+        "": ""
+    },
+    {
+        "Contents": "Smelling barbecue photo",
+        "Sites": "Forest Park in Wuhan",
+        "Time": "2008/10/03",
+        "Models_of_Camera": "Canon ixus II",
+        "Why_Special?": "Every time I look at this photo, the fragrant aroma of cumin seems to overflow. The pictures show the human fireworks are also precious, which makes me miss that time very much.",
+        "": ""
+    },
+    {
+        "Contents": "A photo taken in a hammock after a full barbecue",
+        "Sites": "Forest Park in Wuhan",
+        "Time": "2008/10/03",
+        "Models_of_Camera": "Nokia 1110",
+        "Why_Special?": "The photo shows a very relaxed and pleasant feelings of lying in the hammock in the sunshined afternoon after eating a full barbecue."
+    }
+];
+
+let container = document.getElementById("container");
+
+for (let i = 0; i < collection.length; i++){
+  let itemContents = collection[i].Contents;
+  let newP = document.createElement("p");
+  newP.innerText = itemContents;
+  container.appendChild(newP);
+}
+
+</script>
