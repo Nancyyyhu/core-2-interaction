@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="style.css">
+ <link rel="icon" href="images/favicon.PNG" type="image/x-icon">  
+</head>
+
+<body>
+   <div id=container></div>
+</body>
+
+<style>
+@font-face{
+     font-family: 'MATIOTTELEGANTFONT-Regular';
+     src:url('fonts/MATIOTTELEGANTFONT-Regular.woff') format('woff'),
+         url('fonts/MATIOTTELEGANTFONT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+     font-family: 'MermaidSwashCaps-Bold';
+     src:url('fonts/MermaidSwashCaps-Bold.woff') format('woff'),
+         url('fonts/MermaidSwashCaps-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+body,html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden; 
+    background-color: #fdb5b8;
+}
+
+#container {
+    font-size: 18px;
+    font-family: 'MermaidSwashCaps-Bold';
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-decoration: none;
+  }
+
+.title {
+    max-width: 350px;
+    color: #bd8284;
+    animation: blink-animation-1 1s infinite alternate;
+}
+@keyframes blink-animation-1 {
+        from {
+            opacity: 30%;
+        }
+        to {
+            opacity: 100%;
+        }
+}
+
+
+.main {
+    max-width: 350px;
+    color: #bd8284;
+    animation: blink-animation-2 1s infinite alternate;
+}
+@keyframes blink-animation-2 {
+        from {
+            opacity: 100%;
+        }
+        to {
+            opacity: 30%;
+        }
+}
+
+.theme {
+    max-width: 350px;
+    color: #bd8284;
+    animation: blink-animation-3 1s infinite alternate;
+}
+@keyframes blink-animation-3 {
+        from {
+            opacity: 20%;
+        }
+        to {
+            opacity: 90%;
+        }
+}
+
+.idea {
+    max-width: 350px;
+    color: #bd8284;
+    animation: blink-animation-4 1s infinite alternate;
+}
+@keyframes blink-animation-4 {
+        from {
+            opacity: 90%;
+        }
+        to {
+            opacity: 20%;
+        }
+}
+
+.motif {
+    max-width: 350px;
+    color: #bd8284;
+    animation: blink-animation-5 1s infinite alternate;
+}
+@keyframes blink-animation-5 {
+        from {
+            opacity: 95%;
+        }
+        to {
+            opacity: 25%;
+        }
+}
+
+.grid {
+    max-width: 350px;
+    color: #bd8284;
+    animation: blink-animation-6 1s infinite alternate;
+}
+@keyframes blink-animation-6 {
+        from {
+            opacity: 25%;
+        }
+        to {
+            opacity: 95%;
+        }
+}
+
+.list {
+    max-width: 350px;
+    color: #bd8284;
+    animation: blink-animation-7 1s infinite alternate;
+}
+@keyframes blink-animation-7 {
+        from {
+            opacity: 40%;
+        }
+        to {
+            opacity: 100%;
+        }
+}
+
+
+.graph {
+    max-width: 350px;
+    color: #bd8284;
+    animation: blink-animation-8 1s infinite alternate;
+}
+@keyframes blink-animation-8 {
+        from {
+            opacity: 100%;
+        }
+        to {
+            opacity: 40%;
+        }
+}
+
+
+
+</style>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+
+let collection = [
+    {
+        "Contents": "Accompanied my mother to barbecue with a group of aunts and uncles for the first time,  took pictures on the lawn as a souvenir",
+        "Sites": "He Ping Park in Wuhan",
+        "Time": "2009/12/09",
+        "Models_of_Camera": "Canon ixus 800 IS",
+        "Why_Special?": "The experience of attending an outdoor barbecue for the first time in my life is very memorable",
+        "class": "title"
+    },
+    {
+        "Contents": "I snapped a picture on a random picnic cloth when went to barbecue next year",
+        "Sites": "Forest Park in Wuhan",
+        "Time": "2008/10/03",
+        "Models_of_Camera": "Canon ixus II",
+        "Why_Special?": "The second barbecue has been in grade one of primary school, and this punch card photo is a very good memorial to the experience of picnicing with the friends.",
+        "class": "main"
+    },
+    {
+        "Contents": "A photo with best friend from elementary school and the Bunny mascot from the \"Xi Yang Yang\" carnival",
+        "Sites": "Wuhan Gymnasium",
+        "Time": "2012/04/26",
+        "Models_of_Camera": "iphone 4s",
+        "Why_Special?": "The composition of this picture is very harmonious, can be called a very successful photography. At the same time, the picture of me and my friend laughing happily is very memorable.",
+        "class": "theme"
+    },
+    {
+        "Contents": "Photo taken with the famous \"Red Rabbit\" animation character from the children's TV channel at \"Xi Yang Yang\" carnival",
+        "Sites": "Wuhan Gymnasium",
+        "Time": "2012/04/26",
+        "Models_of_Camera": "iphone 4s",
+        "Why_Special?": "This photo of me with my favorite cartoon character from childhood, Red Rabbit, has special sentimental value to me.",
+        "class": "idea"
+    },
+    {
+        "Contents": "Photo taken with my little sister near the bird-shaped installation in Moshan \"Listening to Birds\" Scenic spot",
+        "Sites": "Moshan Park",
+        "Time": "2013/07/15",
+        "Models_of_Camera": "Canon 300 HS",
+        "Why_Special?": "This photo is a time-logged photo of me taking my two-year-old sister to Moshan Scenic Spot, which has special meaning.",
+        "class": "motif"
+    },
+    {
+        "Contents": "A flat lay on the stone at the gate of Moshan Scenic Area",
+        "Sites": "Moshan Park",
+        "Time": "2013/07/15",
+        "Models_of_Camera": "Canon 300 HS",
+        "Why_Special?": "In this photo, I am lying idly on an ordinary stone in the East Lake Park, which gives people a very natural feeling.",
+        "class": "grid"
+    },
+    {
+        "Contents": "In a tulle dress with dad",
+        "Sites": "The flyover at the intersection",
+        "Time": "2013/06/25",
+        "Models_of_Camera": "Canon 300 HS",
+        "Why_Special?": "This skirt is a gift from my mother who awarded me the Professional Grade 10 certificate in the piano competition. It has great retention value.",
+        "class": "list"
+    },
+    {
+         "Contents": "In a pink princess dress with dad",
+        "Sites": "Yangtze River beach",
+        "Time": "2011/010/10",
+        "Models_of_Camera": "Canon 300 HS",
+        "Why_Special?": "This ensemble was very fashionable in my opinion, and a pink and purple matching ensemble was my favorite color at that time.",
+        "class": "graph"
+    }
+];
+
+let container = document.getElementById("container"); // make a new variable equal to the "container" in your HTML
+
+for (let i = 0; i < collection.length; i++) { // for each item in the collection, do the following:
+    console.log(i);
+  let itemContents = collection[i].Contents; // make a new variable equal to the item's "contents"
+  let newP = document.createElement("p"); // make a new variable equal to a new <p> tag
+  newP.classList.add(collection[i].class);
+  newP.innerText = itemContents; // put the text of "contents" inside the <p> tag
+  container.appendChild(newP); // Put the <p> tag inside the container in the HTML
+}
+
+// for (let i = 0; i < collection.length; i++)
+// let i = 0; this means: make a new variable called "i" that is equal to 0. "i" will be our counter
+// i < collection.length this means: make sure the counter "i" is less then the length of the collection before running the loop
+// i++ this means, increase i by 1
+
+</script>
+
