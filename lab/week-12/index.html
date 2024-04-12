@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="style.css">
+ <link rel="icon" href="images/favicon.PNG" type="image/x-icon">  
+</head>
+
+<body>
+   <div id=forecast></div>
+   
+</body>
+
+<style>
+</style>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+
+var apiUrl = "https://api.weather.gov/gridpoints/TOP/31,80/forecast";
+
+fetch(apiUrl)
+  .then(response => response.json())
+  .then(data => {
+    var forecastContainer = document.getElementById("forecast");
+    data.properties.periods.forEach(period => {
+    var temperatureDiv = document.createElement("div");
+    temperatureDiv.textContent = period.name + ": " + period.temperature + " °F";
+    forecastContainer.appendChild(temperatureDiv);
+
+    console.log(data.properties);
+  });
+});
+
+
+</script>
+
