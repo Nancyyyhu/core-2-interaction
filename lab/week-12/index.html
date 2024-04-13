@@ -9,7 +9,6 @@
 
 <body>
    <div id=forecast></div>
-   
 </body>
 
 <style>
@@ -26,13 +25,12 @@ fetch(apiUrl)
   .then(data => {
     var forecastContainer = document.getElementById("forecast");
     data.properties.periods.forEach(period => {
-    var temperatureDiv = document.createElement("div");
-    temperatureDiv.textContent = period.name + ": " + period.temperature + " °F";
-    forecastContainer.appendChild(temperatureDiv);
-
-    console.log(data.properties);
+      var temperatureDiv = document.createElement("div");
+      temperatureDiv.textContent = period.name + ": " + period.temperature + " °F";
+      forecastContainer.appendChild(temperatureDiv);
+      console.log(data.properties);
+    });
   });
-});
 
 
 </script>
