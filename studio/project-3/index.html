@@ -26,7 +26,9 @@
     </div>
     <img id="image-1" class="image-1" src="images/1.png" alt="Image" width="300">
     <div id="right-text-1" class="right-text-1">
-        <p>This is the text that appears on the right when you click the text on the left.</p>
+            <div class="box" onclick="toggleBox(1)">name
+                <div class="content"><div id="name"></div></div>
+            </div>
     </div>
 </div>
 
@@ -41,7 +43,7 @@
     </div>
     <img id="image-2" class="image-2" src="images/2.png" alt="Image" width="300">
     <div id="right-text-2" class="right-text-2">
-        <p>This is the text that appears on the right when you click the text on the left.</p>
+        <div id="seat"> <p>This is the text that appears on the right when you click the text on the left.</p></div>
     </div>
 </div>
 </body>
@@ -168,6 +170,31 @@ body {
 .right-text-1 {
     display: none;
   }
+.box {
+    width: 1000px;
+    height: 120px;
+    background-color: #d7d2d7;
+    border: 2px solid #d7d2d7;
+    border-radius: 20px;
+    margin: 10px; 
+    font-size: 10px;
+    cursor: pointer;
+    font-family: 'HangingLetters';
+    transition: all 0.5s ease;
+  }
+.box.expand {
+    height: 220px;
+  }
+.content {
+    display: none;
+    font-family: '';
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #d7d2d7;
+  }
+.box.expand .content {
+    display: block;
+  }
 
 
 
@@ -223,9 +250,9 @@ function toggleRightText(rightTextId, textId) {
     var text = document.getElementById(textId);
     if (rightText.style.display === "none") {
         rightText.style.display = "block";
-        if (text.style.fontSize !== "200px") { // 如果文本大小不是小号
-            text.style.fontSize = "200px"; // 将文本变小
-            text.classList.add("clicked"); // 添加 clicked 类，实现向左移动效果
+        if (text.style.fontSize !== "200px") { 
+            text.style.fontSize = "200px"; 
+            text.classList.add("clicked"); 
             rightText.classList.add("clicked");
         }
     } else {
@@ -234,7 +261,51 @@ function toggleRightText(rightTextId, textId) {
             text.style.fontSize = "500px"; // 将文本变回原始大小
             text.classList.remove("clicked"); // 移除 clicked 类
             rightText.classList.remove("clicked"); 
+            resetGroup2Position(); // 收回文本时恢复 .group-2 的原位
         }
     }
 }
+
+function resetGroup2Position() {
+    document.querySelector('.group-2').style.marginTop = '100px'; // 恢复 .group-2 的原位
+}
+
+
+
+function toggleBox(index) {
+    var boxes = document.querySelectorAll('.box');
+    var expandBox = boxes[index - 1];
+    var content = expandBox.querySelector('.content');
+    var nameDiv = document.getElementById('name');
+    var contentHeight = content.offsetHeight;
+
+    boxes.forEach(function(box, i) {
+        if (i === index - 1) {
+            box.classList.toggle('expand');
+        } else {
+            box.classList.remove('expand');
+        }
+    });
+
+    // 如果展开内容，则下移group-2
+    if (expandBox.classList.contains('expand')) {
+        document.querySelector('.group-2').style.marginTop = contentHeight + 1800 + 'px'; // 加上一些额外的间距
+    } else {
+        // 收回内容，则恢复group-2原位
+        document.querySelector('.group-2').style.marginTop = '100px'; // 恢复原始位置
+    }
+}
+
+var apiUrl = "https://data.cityofnewyork.us/resource/hxx3-bwgv.json";
+fetch(apiUrl)
+  .then(response => response.json())
+  .then(data => {
+    var nameDiv = document.getElementById("name");
+    data.forEach(entry => {
+        var name = entry.name;
+        var nameHTML = "<p>Name: " + name + "</p>";
+        nameDiv.innerHTML += nameHTML;
+    });
+  })
+  
 </script>
