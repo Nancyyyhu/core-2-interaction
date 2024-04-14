@@ -20,28 +20,36 @@
 
 
 
-
-<div id="container">
-  <div id="text" onmouseover="showImage()" onmouseout="hideImage()" onclick="showRightText()">Area</div>
-  <img id="image" src="example.jpg" alt="Image" width="100">
+<div class="group-1">
+    <div id="container-1" class="container-1">
+        <div id="text-1" class="text-1" onclick="showImage(event, 'image-1'); toggleRightText('right-text-1', 'text-1')">Fishbridge</div>
+    </div>
+    <img id="image-1" class="image-1" src="images/1.png" alt="Image" width="300">
+    <div id="right-text-1" class="right-text-1">
+        <p>This is the text that appears on the right when you click the text on the left.</p>
+    </div>
 </div>
 
-<div id="right-text">
-  <p>This is the text that appears on the right when you click the text on the left.</p>
+
+
+
+
+
+<div class="group-2">
+    <div id="container-2" class="container-2">
+        <div id="text-2" class="text-2" onclick="showImage(event, 'image-2'); toggleRightText('right-text-2', 'text-2')">Pier84</div>
+    </div>
+    <img id="image-2" class="image-2" src="images/2.png" alt="Image" width="300">
+    <div id="right-text-2" class="right-text-2">
+        <p>This is the text that appears on the right when you click the text on the left.</p>
+    </div>
 </div>
-    
 </body>
 
 <style>
 @font-face{
-     font-family: 'Eastwood';
-     src:url('fonts/Eastwood.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face{
-     font-family: 'Eastwood-Italic';
-     src:url('fonts/Eastwood-Italic.woff') format('woff');
+     font-family: 'StretchProRegular';
+     src:url('fonts/StretchProRegular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -70,8 +78,8 @@
     font-style: normal;
 }
 body {
-    background-color: #f0ebe6;
-
+    background-color: #efdadc;
+    overflow-x: hidden;
 }
 
 
@@ -86,7 +94,6 @@ body {
     color: black;
     text-align: center;
     margin-top: -300px;
-    overflow-x: hidden;
 }
 .enlarge-word-1 {
     transition: transform 0.5s ease-in-out;
@@ -139,38 +146,95 @@ body {
 
 
 
- 
- #container {
+.group-1{
+    margin-top: -250px;
+    margin-left: 300px;
+}
+.container-1 {
     display: flex;
     align-items: center;
   }
-  #text {
-    font-size: 24px;
+.text-1 {
+    font-size: 500px;
+    font-family: 'mckloudblack';
+    color: black;
     cursor: pointer;
     transition: font-size 0.3s ease;
   }
-  #image {
+.image-1 {
+    position: absolute;
     display: none;
   }
-  #right-text {
+.right-text-1 {
     display: none;
   }
+
+
+
+
+
+.group-2{
+    margin-top: 100px;
+    margin-left: -550px;
+}
+.container-2 {
+    display: flex;
+    align-items: center;
+  }
+.text-2 {
+    font-size: 500px;
+    font-family: 'mckloudblack';
+    color: black;
+    cursor: pointer;
+    transition: font-size 0.3s ease;
+  }
+.text-2.clicked {
+    transform: translateX(1000px); /* 向左移动 200px */
+}
+.image-2 {
+    position: absolute;
+    display: none;
+  }
+.right-text-2 {
+    display: none;
+  }
+.right-text-2.clicked {
+    transform: translateX(1000px); /* 向左移动 200px */
+}
 </style>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script type="text/javascript">
 
- function showImage() {
-    document.getElementById("image").style.display = "block";
-  }
+function showImage(event, imageId) {
+    var image = document.getElementById(imageId);
+    image.style.display = "block";
+    image.style.left = event.pageX + 10 + "px";
+    image.style.top = event.pageY + 1 + "px";
+}
 
-  function hideImage() {
-    document.getElementById("image").style.display = "none";
-  }
+function hideImage(imageId) {
+    var image = document.getElementById(imageId);
+    image.style.display = "none";
+}
 
-  function showRightText() {
-    document.getElementById("right-text").style.display = "block";
-    document.getElementById("text").style.fontSize = "20px";
-  }
-
+function toggleRightText(rightTextId, textId) {
+    var rightText = document.getElementById(rightTextId);
+    var text = document.getElementById(textId);
+    if (rightText.style.display === "none") {
+        rightText.style.display = "block";
+        if (text.style.fontSize !== "200px") { // 如果文本大小不是小号
+            text.style.fontSize = "200px"; // 将文本变小
+            text.classList.add("clicked"); // 添加 clicked 类，实现向左移动效果
+            rightText.classList.add("clicked");
+        }
+    } else {
+        rightText.style.display = "none";
+        if (text.style.fontSize !== "500px") { // 如果文本大小不是原始大小
+            text.style.fontSize = "500px"; // 将文本变回原始大小
+            text.classList.remove("clicked"); // 移除 clicked 类
+            rightText.classList.remove("clicked"); 
+        }
+    }
+}
 </script>
