@@ -16,28 +16,20 @@
     <p class="enlarge-word-6">N</p>
 </div>
 
-<div class="container">
-    <div class="box" onclick="toggleBox(1)">
-    Box 1
-        <div class="content">Content 1</div>
-    </div>
-    <div class="box" onclick="toggleBox(2)">
-    Box 2
-        <div class="content">Content 2</div>
-    </div>
-    <div class="box" onclick="toggleBox(3)">
-    Box 3
-        <div class="content">Content 3</div>
-    </div>
-    <div class="box" onclick="toggleBox(4)">
-    Box 4
-        <div class="content">Content 4</div>
-    </div>
-    <div class="box" onclick="toggleBox(5)">
-    Box 5
-        <div class="content">Content 5</div>
-    </div>
+
+
+
+
+
+<div id="container">
+  <div id="text" onmouseover="showImage()" onmouseout="hideImage()" onclick="showRightText()">Area</div>
+  <img id="image" src="example.jpg" alt="Image" width="100">
 </div>
+
+<div id="right-text">
+  <p>This is the text that appears on the right when you click the text on the left.</p>
+</div>
+    
 </body>
 
 <style>
@@ -61,19 +53,19 @@
 }
 @font-face{
      font-family: 'mckloudblack';
-     src:url('fonts/McKloudBlack.woff') format('woff');
+     src:url('fonts/mckloudblack.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face{
      font-family: 'mckloudshadow';
-     src:url('fonts/McKloudShadow.woff') format('woff');
+     src:url('fonts/mckloudshadow.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face{
      font-family: 'mckloudwhite';
-     src:url('fonts/McKloudWhite.woff') format('woff');
+     src:url('fonts/mckloudwhite.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -147,51 +139,38 @@ body {
 
 
 
- .container {
+ 
+ #container {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-top: -200px;
   }
-  .box {
-    width: 1300px;
-    height: 120px;
-    background-color: #d7d2d7;
-    border: 2px solid #d7d2d7;
-    border-radius: 20px;
-    margin: 10px; 
-    font-size: 50px;
+  #text {
+    font-size: 24px;
     cursor: pointer;
-    font-family: 'HangingLetters';
-    transition: all 0.5s ease;
+    transition: font-size 0.3s ease;
   }
-  .box.expand {
-    height: 220px;
-  }
-  .content {
+  #image {
     display: none;
-    font-family: '';
-    padding: 10px;
-    margin-top: 5px;
-    background-color: #d7d2d7;
   }
-  .box.expand .content {
-    display: block;
+  #right-text {
+    display: none;
   }
 </style>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script type="text/javascript">
 
-function toggleBox(index) {
-    var boxes = document.querySelectorAll('.box');
-    boxes.forEach(function(box, i) {
-      if (i === index - 1) {
-        box.classList.toggle('expand');
-      } else {
-        box.classList.remove('expand');
-      }
-    });
+ function showImage() {
+    document.getElementById("image").style.display = "block";
+  }
+
+  function hideImage() {
+    document.getElementById("image").style.display = "none";
+  }
+
+  function showRightText() {
+    document.getElementById("right-text").style.display = "block";
+    document.getElementById("text").style.fontSize = "20px";
   }
 
 </script>
