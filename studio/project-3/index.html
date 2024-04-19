@@ -3,49 +3,236 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<div class="title">
-    <p class="enlarge-word-1">D</p>
-    <p class="enlarge-word-2">O</p>
-    <p class="enlarge-word-3">G</p>
-    <p class="enlarge-word-4">R</p>
-    <p class="enlarge-word-5">U</p>
-    <p class="enlarge-word-6">N</p>
+<div class="header">
+    <p>DOG RUN PARK</p>
+    <p1>"Unleash Joy, Unleash Freedom: Where Every Bark Finds Its Park!"<p1>
+
+    <div class="grid">
+        <div class="row">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="row">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="row">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="row">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="row">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="row">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="row">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="row">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        
+        <div class="red-dot" style="top: 15%; left: 20%;" data-id="1"></div>
+        <div class="red-dot" style="top: 20%; left: 30%;" data-id="2"></div>
+    </div>
 </div>
 
-
-
-
-
-<div class="group-1">
-    <div id="container-1" class="container-1">
-        <div id="text-1" class="text-1" onclick="showImage(event, 'image-1'); toggleRightText('right-text-1', 'text-1')">Fishbridge</div>
+<div class="container">
+    <div class="box" onclick="toggleContent(1)">
+        <div class="circle"></div>
+        <h2 class="title">Box 1 - Title</h2>
+        <div class="arrow">&#8594;</div>
     </div>
-    <img id="image-1" class="image-1" src="images/1.png" alt="Image" width="300">
-    <div id="right-text-1" class="right-text-1">
-            <div class="box" onclick="toggleBox(1)">name
-                <div class="content"><div id="name"></div></div>
+        <div class="content active" id="content1">
+            <div class="left-section">
+                <img src="images/dogimage1.jpg" onmouseover="toggleImage(this)" onmouseout="toggleImage(this)">
+                
             </div>
+            <div class="right-section">
+                <h3 class="section-title">Section 1 Title</h3>
+                <div class="content-text">
+                    Box 1 Content Here
+                </div>
+            </div>
+        </div>
+    <div class="line"></div>
+
+    <div class="box" onclick="toggleContent(2)"> 
+        <div class="circle"></div>
+        <h2 class="title">Box 2 - Title</h2>
+        <div class="arrow">&#8594;</div>
     </div>
+        <div class="content active" id="content2">
+            <div class="left-section">
+                <img src="images/2222.jpg" alt="Image 2">
+            </div>
+            <div class="right-section">
+                <h3 class="section-title">Section 2 Title</h3>
+                <div class="content-text">
+                    Box 2 Content Here
+                </div>
+            </div>
+        </div>
+    <div class="line"></div>
+
+    <div class="box" onclick="toggleContent(3)">
+        <div class="circle"></div>
+        <h2 class="title">Box 3 - Title</h2>
+        <div class="arrow">&#8594;</div>
+    </div>
+        <div class="content active" id="content3">
+            Box 3 Content Here
+        </div>
+    <div class="line"></div>
+
+    <div class="box" onclick="toggleContent(4)">
+        <div class="circle"></div>
+        <h2 class="title">Box 4 - Title</h2>
+        <div class="arrow">&#8594;</div>
+    </div>
+    <div class="content active" id="content4">
+        Box 4 Content Here
+    </div>
+    <div class="line"></div>
+
+    <div class="box" onclick="toggleContent(5)">
+        <div class="circle"></div>
+        <h2 class="title">Box 5 - Title</h2>
+        <div class="arrow">&#8594;</div>
+    </div>
+        <div class="content active" id="content5">
+            Box 5 Content Here
+        </div>
+    <div class="line"></div>
+
+    <div class="box" onclick="toggleContent(6)">
+        <div class="circle"></div>
+        <h2 class="title">Box 6 - Title</h2>
+        <div class="arrow">&#8594;</div>
+    </div>
+       <div class="content active" id="content6">
+            Box 6 Content Here
+       </div>
+    <div class="line"></div>
+
+    <div class="box" onclick="toggleContent(7)">
+        <div class="circle"></div>
+        <h2 class="title">Box 7 - Title</h2>
+        <div class="arrow">&#8594;</div>
+    </div>
+        <div class="content active" id="content7">
+            Box 7 Content Here
+        </div>
+    <div class="line"></div>
+
+    <div class="box" onclick="toggleContent(8)">
+        <div class="circle"></div>
+        <h2 class="title">Box 8 - Title</h2>
+        <div class="arrow">&#8594;</div>
+    </div>
+       <div class="content active" id="content8">
+            Box 8 Content Here
+       </div>
+    <div class="line"></div>
+
+    <div class="box" onclick="toggleContent(9)">
+        <div class="circle"></div>
+        <h2 class="title">Box 9 - Title</h2>
+        <div class="arrow">&#8594;</div>
+    </div>
+    <div class="content active" id="content9">
+        Box 9 Content Here
+    </div>
+    <div class="line"></div>
+
+    <div class="box" onclick="toggleContent(10)">
+        <div class="circle"></div>
+        <h2 class="title">Box 10 - Title</h2>
+        <div class="arrow">&#8594;</div>
+    </div>
+        <div class="content active" id="content10">
+            Box 10 Content Here
+        </div>
+    <div class="line"></div>
 </div>
 
 
-
-
-
-
-<div class="group-2">
-    <div id="container-2" class="container-2">
-        <div id="text-2" class="text-2" onclick="showImage(event, 'image-2'); toggleRightText('right-text-2', 'text-2')">Pier84</div>
-    </div>
-    <img id="image-2" class="image-2" src="images/2.png" alt="Image" width="300">
-    <div id="right-text-2" class="right-text-2">
-        <div id="seat"> <p>This is the text that appears on the right when you click the text on the left.</p></div>
-    </div>
-</div>
 </body>
 
 <style>
@@ -79,233 +266,198 @@
     font-weight: normal;
     font-style: normal;
 }
+
 body {
-    background-color: #efdadc;
-    overflow-x: hidden;
-}
+        background-color: black;
+        color: white;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .header {
+        background-color: white;
+        width: 100%;
+        height: 100vh;
+        border-radius: 50px;
+        color: black;
+        margin-top: -50px;
+    }
+    .header p {
+        font-size: 50px;
+        padding-left: 50px;
+        padding-top: 50px;
+    }
+    .header p1 {
+        font-size: 15px;
+        padding-left: 50px;
+        padding-top: 20px;
+    }
+    .grid {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding-top: 75px;
+    }
+
+    .row {
+        display: flex;
+        width: 100%;
+        height: calc(100% / 10); /* 网格高度，这里假设为 10 行 */
+    }
+
+    .row > div {
+        width: calc(100% / 10); /* 网格宽度，这里假设为 10 列 */
+        border: 1px solid black;
+        box-sizing: border-box;
+    }
+
+    .red-dot {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        border-radius: 50%;
+        z-index: 10;
+        cursor: pointer;
+    }
 
 
 
 
 
-.title {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr); 
-    font-family: 'mckloudshadow';
-    font-size: 270px;
-    color: black;
-    text-align: center;
-    margin-top: -300px;
-}
-.enlarge-word-1 {
-    transition: transform 0.5s ease-in-out;
-}
-.enlarge-word-1:hover {
-  transform: scale(1.1);
-  font-family: 'mckloudblack';
-  cursor: pointer;
-}
-.enlarge-word-2 {
-    transition: transform 0.5s ease-in-out;
-}
-.enlarge-word-2:hover {
-  transform: rotate(360deg);
-  font-family: 'mckloudblack';
-  cursor: pointer;
-}
-.enlarge-word-3 {
-    transition: transform 0.5s ease-in-out;
-}
-.enlarge-word-3:hover {
-  transform: rotate(180deg);
-  font-family: 'mckloudwhite';
-  cursor: pointer;
-}
-.enlarge-word-4 {
-    transition: transform 0.5s ease-in-out;
-}
-.enlarge-word-4:hover {
-  transform: rotate(15deg);
-  font-family: 'mckloudblack';
-  cursor: pointer;
-}
-.enlarge-word-5 {
-    transition: transform 0.5s ease-in-out;
-}
-.enlarge-word-5:hover {
-  transform: rotate(-45deg);
-  cursor: pointer;
-}
-.enlarge-word-6 {
-    transition: transform 0.5s ease-in-out;
-}
-.enlarge-word-6:hover {
-  transform: scale(1.1);
-  font-family: 'mckloudwhite';
-  cursor: pointer;
-}
-
-
-
-
-.group-1{
-    margin-top: -250px;
-    margin-left: 300px;
-}
-.container-1 {
-    display: flex;
-    align-items: center;
-  }
-.text-1 {
-    font-size: 500px;
-    font-family: 'mckloudblack';
-    color: black;
-    cursor: pointer;
-    transition: font-size 0.3s ease;
-  }
-.image-1 {
-    position: absolute;
-    display: none;
-  }
-.right-text-1 {
-    display: none;
-  }
-.box {
-    width: 1000px;
-    height: 120px;
-    background-color: #d7d2d7;
-    border: 2px solid #d7d2d7;
-    border-radius: 20px;
-    margin: 10px; 
-    font-size: 10px;
-    cursor: pointer;
-    font-family: 'HangingLetters';
-    transition: all 0.5s ease;
-  }
-.box.expand {
-    height: 220px;
-  }
-.content {
-    display: none;
-    font-family: '';
-    padding: 10px;
-    margin-top: 5px;
-    background-color: #d7d2d7;
-  }
-.box.expand .content {
-    display: block;
-  }
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .box {
+        height: 100px;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    .circle {
+        width: 20px;
+        height: 20px;
+        border: 2px solid white;
+        border-radius: 50%;
+        margin-left: 20px;
+    }
+    .title {
+        margin-left: 10px;
+        cursor: pointer;
+        ;
+    }
+    .arrow {
+        position: absolute;
+        right: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .line {
+        width: 100%;
+        height: 1px;
+        background-color: white;
+    }
 
 
 
 
 
-.group-2{
-    margin-top: 100px;
-    margin-left: -550px;
-}
-.container-2 {
-    display: flex;
-    align-items: center;
-  }
-.text-2 {
-    font-size: 500px;
-    font-family: 'mckloudblack';
-    color: black;
-    cursor: pointer;
-    transition: font-size 0.3s ease;
-  }
-.text-2.clicked {
-    transform: translateX(1000px); /* 向左移动 200px */
-}
-.image-2 {
-    position: absolute;
-    display: none;
-  }
-.right-text-2 {
-    display: none;
-  }
-.right-text-2.clicked {
-    transform: translateX(1000px); /* 向左移动 200px */
-}
+   .content {
+        display: flex;
+    }
+    .content.active {
+        display: none;
+    }
+
+    .left-section {
+        flex: 1;
+        border-radius: 50px;
+        overflow: hidden;
+    }
+
+    .left-section img {
+        width: 100%; 
+        height: 100%;
+        object-fit: cover;
+        cursor: pointer;
+    }
+
+    .left-section img:hover {
+    animation: none;
+    transform: scale(1);
+    }
+
+    .right-section {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        width: 50%;
+        border-radius: 50px;
+        overflow: hidden;
+    }
+
+    .section-title {
+        background-color: white;
+        color: black;
+        text-align: center;
+        padding: 10px 0;
+        margin: 0;
+    }
+
+    .content-text {
+        background-color: white;
+        color: black;
+        padding: 10px;
+        flex-grow: 1; 
+    }
 </style>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+ <script src="p5.min.js"></script>
 <script type="text/javascript">
+var redDots = document.querySelectorAll('.red-dot');
+        redDots.forEach(function(dot) {
+        dot.addEventListener('click', function() {
+            var dotId = dot.getAttribute('data-id'); 
+            var content = getContentById(dotId); 
+            if (content) {
+                alert(content); 
+            }
+        });
+    });
+function getContentById(id) {
+    var contents = {
+            "1": "内容1",
+            "2": "内容2",
+        };
+        return contents[id];
+    }
 
-function showImage(event, imageId) {
-    var image = document.getElementById(imageId);
-    image.style.display = "block";
-    image.style.left = event.pageX + 10 + "px";
-    image.style.top = event.pageY + 1 + "px";
-}
-
-function hideImage(imageId) {
-    var image = document.getElementById(imageId);
-    image.style.display = "none";
-}
-
-function toggleRightText(rightTextId, textId) {
-    var rightText = document.getElementById(rightTextId);
-    var text = document.getElementById(textId);
-    if (rightText.style.display === "none") {
-        rightText.style.display = "block";
-        if (text.style.fontSize !== "200px") { 
-            text.style.fontSize = "200px"; 
-            text.classList.add("clicked"); 
-            rightText.classList.add("clicked");
-        }
-    } else {
-        rightText.style.display = "none";
-        if (text.style.fontSize !== "500px") { // 如果文本大小不是原始大小
-            text.style.fontSize = "500px"; // 将文本变回原始大小
-            text.classList.remove("clicked"); // 移除 clicked 类
-            rightText.classList.remove("clicked"); 
-            resetGroup2Position(); // 收回文本时恢复 .group-2 的原位
-        }
+window.onload = function() {
+    var contents = document.querySelectorAll('.content');
+    for (var i = 0; i < contents.length; i++) {
+        contents[i].classList.remove('content active');
     }
 }
 
-function resetGroup2Position() {
-    document.querySelector('.group-2').style.marginTop = '100px'; // 恢复 .group-2 的原位
-}
+function toggleContent(index) {
+    var content = document.getElementById('content' + index);
+    content.classList.toggle('active');
+    
+    var arrow = document.querySelector('#content' + index + ' .arrow');
+        arrow.textContent = content.classList.contains('active') ? '←' : '→';
+    }
 
-
-
-function toggleBox(index) {
-    var boxes = document.querySelectorAll('.box');
-    var expandBox = boxes[index - 1];
-    var content = expandBox.querySelector('.content');
-    var nameDiv = document.getElementById('name');
-    var contentHeight = content.offsetHeight;
-
-    boxes.forEach(function(box, i) {
-        if (i === index - 1) {
-            box.classList.toggle('expand');
-        } else {
-            box.classList.remove('expand');
-        }
-    });
-
-    // 如果展开内容，则下移group-2
-    if (expandBox.classList.contains('expand')) {
-        document.querySelector('.group-2').style.marginTop = contentHeight + 1800 + 'px'; // 加上一些额外的间距
+function toggleImage(img) {
+    if (img.src.includes("dogimage1.jpg")) {
+        img.src = "images/doggif1.gif";
     } else {
-        // 收回内容，则恢复group-2原位
-        document.querySelector('.group-2').style.marginTop = '100px'; // 恢复原始位置
+        img.src = "images/dogimage1.jpg";
     }
 }
 
-var apiUrl = "https://data.cityofnewyork.us/resource/hxx3-bwgv.json";
-fetch(apiUrl)
-  .then(response => response.json())
-  .then(data => {
-    var nameDiv = document.getElementById("name");
-    data.forEach(entry => {
-        var name = entry.name;
-        var nameHTML = "<p>Name: " + name + "</p>";
-        nameDiv.innerHTML += nameHTML;
-    });
-  })
-  
+
+
 </script>
